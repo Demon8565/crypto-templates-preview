@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crypto Landing Page Templates | Demon</title>
+<style>
+  :root{
+    --bg: #0A0A0F;
+    --card: #131319;
+    --accent: #14F195;
+    --accent2: #9945FF;
+    --text: #EDEDED;
+    --muted: #9A9AA5;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding: 60px 20px;
+  }
+  h1{
+    font-size: clamp(28px, 6vw, 42px);
+    margin-bottom: 8px;
+    text-align:center;
+  }
+  p.sub{
+    color: var(--muted);
+    margin-bottom: 48px;
+    text-align:center;
+    max-width: 480px;
+  }
+  .grid{
+    display:grid;
+    gap: 24px;
+    width:100%;
+    max-width: 900px;
+    grid-template-columns: 1fr;
+  }
+  @media(min-width:640px){ .grid{ grid-template-columns: 1fr 1fr; } }
+  .card{
+    background: var(--card);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 28px;
+    text-decoration:none;
+    color: var(--text);
+    transition: transform 0.2s, border-color 0.2s;
+    display:flex;
+    flex-direction:column;
+  }
+  .card:hover{
+    transform: translateY(-4px);
+    border-color: var(--accent);
+  }
+  .card h2{
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .card p{
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 20px;
+    flex-grow:1;
+  }
+  .card span{
+    color: var(--accent);
+    font-size: 14px;
+    font-weight:600;
+  }
+  footer{
+    margin-top: 60px;
+    color: var(--muted);
+    font-size: 13px;
+    text-align:center;
+  }
+  footer a{ color: var(--accent); text-decoration:none; }
+</style>
+</head>
+<body>
+  <h1>Crypto Landing Page Templates</h1>
+  <p class="sub">Ready-to-deploy HTML/CSS/JS templates for token and NFT launches. Pick a style, swap in your branding, ship in minutes.</p>
+
+  <div class="grid">
+    <a class="card" href="degen-zine/">
+      <h2>🎸 Degen Zine</h2>
+      <p>Punk-aesthetic landing page built for token and NFT launches that want raw, high-energy edge.</p>
+      <span>View template →</span>
+    </a>
+    <a class="card" href="y2k-chrome/">
+      <h2>💿 Y2K Chrome</h2>
+      <p>Holographic, futuristic landing page for Web3 projects that want a bold chrome-and-neon look.</p>
+      <span>View template →</span>
+    </a>
+  </div>
+
+  <footer>
+    Built by Demon · <a href="https://x.com/Lucifer_SMG" target="_blank">@Lucifer_SMG</a>
+  </footer>
+</body>
+</html>
